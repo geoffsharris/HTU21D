@@ -28,7 +28,7 @@ float HTU21D::readHumidity(){
 	Wire.endTransmission();
 
 	// Wait for the sensor to measure
-	delay(18); // 16ms measure time for 12bit measures
+	delay(50); // 16ms measure time for 12bit measures
 
 	Wire.requestFrom(HTDU21D_ADDRESS, 3);
 
